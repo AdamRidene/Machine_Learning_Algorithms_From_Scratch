@@ -8,6 +8,7 @@ class KMeans:
         self.n_clusters=n_clusters#number of clusters
         self.max_iter=max_iter#maximum number of iterations
         self.n_init=n_init#number of times to run the algorithm
+        self.best_centroids=None
     def fit(self,data):
             self.data=data
             self.x=[i[0] for i in self.data]
